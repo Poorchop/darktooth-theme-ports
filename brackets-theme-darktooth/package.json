@@ -1,0 +1,14 @@
+{
+    "name": "brackets-theme-darktooth",
+    "title": "Darktooth",
+    "description": "Port of the Emacs Darktooth theme to Brackets",
+    "homepage": "https://github.com/Poorchop/darktooth-theme-ports/tree/master/brackets-theme-darktooth",
+    "version": "0.0.1",
+    "author": "Poorchop",
+    "license": "MIT",
+    "theme": {
+        "file": "darktooth.less",
+        "dark": true
+    },
+    "keywords": ["theme"]
+}
