@@ -3,12 +3,19 @@
     "title": "Darktooth",
     "description": "Port of the Emacs Darktooth theme to Brackets",
     "homepage": "https://github.com/Poorchop/darktooth-theme-ports/tree/master/brackets-theme-darktooth",
-    "version": "0.0.1",
-    "author": "Poorchop",
+    "version": "0.0.2",
+    "author": "Poorchop (https://github.com/Poorchop)",
     "license": "MIT",
     "theme": {
         "file": "darktooth.less",
         "dark": true
     },
-    "keywords": ["theme"]
+    "keywords": [
+        "darktooth",
+        "theme",
+        "dark"
+    ],
+    "categories": [
+        "visual"
+    ]
 }

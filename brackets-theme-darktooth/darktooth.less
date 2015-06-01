@@ -25,7 +25,12 @@
  */
 
 
-/* Color palette */
+/*
+ *****************
+ * Color palette *
+ *****************
+*/
+
 @darktooth-dark0: #282828; // background
 @darktooth-dark2: #504945;
 @darktooth-dark4: #7C6F64;
@@ -54,7 +59,12 @@
 @darktooth-turquoise4: #61ACBB;
 
 
-/* General styling */
+/*
+ *******************
+ * General styling *
+ *******************
+*/
+
 .CodeMirror, .CodeMirror-scroll {
     background-color: @darktooth-dark0;
     color: @darktooth-light0;
@@ -97,7 +107,12 @@
 }
 
 
-/* Syntax highlighting */
+/*
+ ***********************
+ * Syntax highlighting *
+ ***********************
+*/
+
 .cm-atom {color: @darktooth-light0;}
 .cm-attribute {color: @darktooth-bright_blue;} // NOTE: possible bug - affects text between <p></p> tags in Markdown
 .cm-builtin {color: @darktooth-bright_orange;}
@@ -128,7 +143,26 @@
 .cm-invalidchar {color: @darktooth-bright_red;}
 
 
-// TODO: figure out what these affect - use obvious colors to identify more easily
+/*
+ ***********************
+ * Brackets extensions *
+ ***********************
+ */
+
+/* brackets-show-whitespace */
+.CodeMirror .cm-dk-whitespace-space:before, .CodeMirror .cm-dk-whitespace-tab:before,
+.CodeMirror .cm-dk-whitespace-leading-space:before, .CodeMirror .cm-dk-whitespace-leading-tab:before {
+    background-color: @darktooth-dark2; // official default is darktooth-dark4
+}
+.CodeMirror .cm-dk-whitespace-empty-line-space:before, .CodeMirror .cm-dk-whitespace-empty-line-tab:before {
+    background-color: <%= dark.empty %>; // default setting
+}
+.CodeMirror .cm-dk-whitespace-trailing-space:before, .CodeMirror .cm-dk-whitespace-trailing-tab:before {
+    background-color: @darktooth-neutral_red;
+}
+
+
+/* TODO: figure out what these affect - use obvious colors to identify more easily */
 .cm-punctuation {color: red;}
 .cm-string-2 {color: red;}
 .cm-header {color: red;} // Markdown: `[text]` in `## [text](https://site.com)`
@@ -140,4 +174,4 @@
 /* TODO: additional rules
  * 1.) active line highlighting on unfocused pane
  * 2.) change cursor color in overwrite mode (not a darktooth default)
-*/
+ */
