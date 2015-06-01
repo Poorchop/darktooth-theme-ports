@@ -27,6 +27,7 @@
 
 /* Color palette */
 @darktooth-dark0: #282828; // background
+@darktooth-dark2: #504945;
 @darktooth-dark4: #7C6F64;
 @darktooth-light0: #FDF4C1; // foreground
 @darktooth-light4: #A89984;
@@ -35,8 +36,13 @@
 @darktooth-bright_blue: #83A598;
 @darktooth-bright_orange: #FE8019;
 
+@darktooth-neutral_red: #FB4934;
+@darktooth-neutral_green: #B8BB26;
+
 @darktooth-dark_blue: #2B3C44;
 @darktooth-dark_purple: #4E3D45;
+
+@darktooth-faded_aqua: #427B58;
 
 @darktooth-white: #FFFFFF;
 @darktooth-black: #000000;
@@ -76,24 +82,39 @@
 }
 
 .CodeMirror-matchingbracket, .CodeMirror-matchingtag {
-    background-color: #076679; // TODO: sampled directly from Emacs - not officially part of palette
+    background-color: #076679; // NOTE: sampled directly from Emacs - not officially part of palette
     color: @darktooth-light0 !important;
+    font-weight: bold;
 }
 
+.CodeMirror-searching {
+    background-color: @darktooth-dark2;
+    color: @darktooth-light0 !important;
+    &.searching-current-match {
+        background-color: @darktooth-faded_aqua;
+        color: @darktooth-light0 !important;
+    }
+}
+
+
 /* Syntax highlighting */
-.cm-keyword {color: @darktooth-sienna;}
 .cm-atom {color: @darktooth-light0;}
-.cm-number {color: @darktooth-burlywood4;}
-.cm-def {color: @darktooth-light4;}
-.cm-variable {color: @darktooth-bright_blue;}
-.cm-property {color: @darktooth-light4;}
-.cm-operator {color: @darktooth-light0;}
-.cm-variable-2 {color: @darktooth-bright_orange;} // TODO: double check this one
-.cm-comment {color: @darktooth-dark4;}
-.cm-string {color: @darktooth-darkslategray4;}
-.cm-qualifier {color: @darktooth-light4;}
+.cm-attribute {color: @darktooth-bright_blue;} // NOTE: possible bug - affects text between <p></p> tags in Markdown
 .cm-builtin {color: @darktooth-bright_orange;}
-.cm-tag {color: @darktooth-bright_orange;} // TODO: unsure about this
+.cm-comment {color: @darktooth-dark4;}
+.cm-def {color: @darktooth-light4;}
+.cm-keyword {color: @darktooth-sienna;}
+.cm-meta {color: @darktooth-light0;}
+.cm-number {color: @darktooth-burlywood4;}
+.cm-operator {color: @darktooth-light0;}
+.cm-property {color: @darktooth-light4;}
+.cm-qualifier {color: @darktooth-light4;}
+.cm-string {color: @darktooth-darkslategray4;}
+.cm-tag {color: @darktooth-bright_orange;} // FIXME: unsure about this
+.cm-bracket {color: @darktooth-light0;} // NOTE: only seems to work when applied after .cm-tag style
+.cm-variable {color: @darktooth-bright_blue;}
+.cm-variable-2 {color: @darktooth-bright_orange;} // FIXME: double check this one
+.cm-variable-3 {color: @darktooth-bright_blue;} // `src` in `<img src="" />`
 .cm-link {
     color: @darktooth-bright_blue;
     text-decoration: underline;
@@ -109,13 +130,14 @@
 
 // TODO: figure out what these affect - use obvious colors to identify more easily
 .cm-punctuation {color: red;}
-.cm-variable-3 {color: red;}
 .cm-string-2 {color: red;}
-.cm-meta {color: red;}
-.cm-bracket {color: red;}
-.cm-attribute {color: red;}
-.cm-header {color: red;}
+.cm-header {color: red;} // Markdown: `[text]` in `## [text](https://site.com)`
 .cm-quote {color: red;}
 .cm-hr {color: red;}
-.cm-negative {color: black;}
-.cm-positive {color: black;}
+.cm-negative {color: @darktooth-neutral_red;}
+.cm-positive {color: @darktooth-neutral_green;}
+
+/* TODO: additional rules
+ * 1.) active line highlighting on unfocused pane
+ * 2.) change cursor color in overwrite mode (not a darktooth default)
+*/
