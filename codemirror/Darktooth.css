@@ -1,0 +1,33 @@
+/*
+
+    Name:       Darktooth
+    Author:     Jason Milkins (https://github.com/jasonm23)
+
+    CodeMirror template by Jan T. Sott (https://github.com/idleberg)
+    Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
+
+*/
+
+.cm-s-darktooth.CodeMirror {background: #1D2021; color: #D5C4A1;}
+.cm-s-darktooth div.CodeMirror-selected {background: #32302F !important;}
+.cm-s-darktooth .CodeMirror-gutters {background: #1D2021; border-right: 0px;}
+.cm-s-darktooth .CodeMirror-linenumber {color: #665C54;}
+.cm-s-darktooth .CodeMirror-cursor {border-left: 1px solid #928374 !important;}
+
+.cm-s-darktooth span.cm-comment {color: #A87322;}
+.cm-s-darktooth span.cm-atom {color: #8F4673;}
+.cm-s-darktooth span.cm-number {color: #8F4673;}
+
+.cm-s-darktooth span.cm-property, .cm-s-darktooth span.cm-attribute {color: #95C085;}
+.cm-s-darktooth span.cm-keyword {color: #FB543F;}
+.cm-s-darktooth span.cm-string {color: #FAC03B;}
+
+.cm-s-darktooth span.cm-variable {color: #95C085;}
+.cm-s-darktooth span.cm-variable-2 {color: #0D6678;}
+.cm-s-darktooth span.cm-def {color: #FE8625;}
+.cm-s-darktooth span.cm-error {background: #FB543F; color: #928374;}
+.cm-s-darktooth span.cm-bracket {color: #D5C4A1;}
+.cm-s-darktooth span.cm-tag {color: #FB543F;}
+.cm-s-darktooth span.cm-link {color: #8F4673;}
+
+.cm-s-darktooth .CodeMirror-matchingbracket { text-decoration: underline; color: white !important;}
