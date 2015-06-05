@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+; Darktooth (https://github.com/chriskempson/base16)
+; Scheme: Jason Milkins (https://github.com/jasonm23)
+
+[HKEY_CURRENT_USER\Console]
+"ColorTable00"=dword:0021201D
+"ColorTable01"=dword:0078660D
+"ColorTable02"=dword:0085C095
+"ColorTable03"=dword:009BA58B
+"ColorTable04"=dword:002586FE
+"ColorTable05"=dword:0073468F
+"ColorTable06"=dword:003BC0FA
+"ColorTable07"=dword:00748392
+"ColorTable08"=dword:00545C66
+"ColorTable09"=dword:0078660D
+"ColorTable10"=dword:0085C095
+"ColorTable11"=dword:009BA58B
+"ColorTable12"=dword:003F54FB
+"ColorTable13"=dword:002273A8
+"ColorTable14"=dword:003BC0FA
+"ColorTable15"=dword:00C1F4FD
