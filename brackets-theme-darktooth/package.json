@@ -3,7 +3,7 @@
     "title": "Darktooth",
     "description": "Port of the Emacs Darktooth theme to Brackets",
     "homepage": "https://github.com/Poorchop/darktooth-theme-ports/tree/master/brackets-theme-darktooth",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "author": "Poorchop (https://github.com/Poorchop)",
     "license": "MIT",
     "theme": {
