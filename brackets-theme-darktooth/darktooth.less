@@ -101,7 +101,7 @@ div.CodeMirror-overwrite div.CodeMirror-cursor {
 
 
 .CodeMirror-matchingbracket, .CodeMirror-matchingtag {
-    background-color: #076679; // NOTE: sampled directly from Emacs - not officially part of palette
+    background-color: #076679;
     color: @darktooth-light0 !important;
     font-weight: bold;
 }
@@ -123,12 +123,12 @@ div.CodeMirror-overwrite div.CodeMirror-cursor {
  */
 
 .cm-atom {color: @darktooth-light0;}
-.cm-attribute {color: @darktooth-aquamarine4;} // NOTE: possible bug - affects text between <p></p> tags in Markdown
+.cm-attribute {color: @darktooth-aquamarine4;}
 .cm-builtin {color: @darktooth-bright_orange;}
 .cm-comment {color: @darktooth-dark4;}
 .cm-def {color: @darktooth-light4;}
-.cm-header {color: @darktooth-light0; font-weight: bolder;} // Markdown: `[text]` in `## [text](https://site.com)`
-.cm-hr {color: @darktooth-light0;} // `---` in Markdown
+.cm-header {color: @darktooth-light0; font-weight: bolder;}
+.cm-hr {color: @darktooth-light0;}
 .cm-keyword {color: @darktooth-sienna;}
 .cm-meta {color: @darktooth-light0;}
 .cm-number {color: @darktooth-burlywood4;}
@@ -136,12 +136,12 @@ div.CodeMirror-overwrite div.CodeMirror-cursor {
 .cm-property {color: @darktooth-aquamarine4;}
 .cm-qualifier {color: @darktooth-light4;}
 .cm-string {color: @darktooth-darkslategray4;}
-.cm-string-2 {color: @darktooth-aquamarine4;} // `*zoom:1;` in codemirror.css
+.cm-string-2 {color: @darktooth-aquamarine4;}
 .cm-tag {color: @darktooth-bright_orange;}
 .cm-bracket {color: @darktooth-light0;}
 .cm-variable {color: @darktooth-aquamarine4;}
 .cm-variable-2 {color: @darktooth-bright_orange;}
-.cm-variable-3 {color: @darktooth-aquamarine4;} // `src` in `<img src="" />`
+.cm-variable-3 {color: @darktooth-aquamarine4;}
 .cm-link {
     color: @darktooth-bright_blue;
     text-decoration: underline;
@@ -153,6 +153,9 @@ div.CodeMirror-overwrite div.CodeMirror-cursor {
 .cm-strikethrough {text-decoration: line-through;}
 .cm-error {color: @darktooth-bright_red;}
 .cm-invalidchar {color: @darktooth-bright_red;}
+
+.cm-negative {color: @darktooth-neutral_red;}
+.cm-positive {color: @darktooth-neutral_green;}
 
 
 /*
@@ -172,10 +175,3 @@ div.CodeMirror-overwrite div.CodeMirror-cursor {
 .CodeMirror .cm-dk-whitespace-trailing-space:before, .CodeMirror .cm-dk-whitespace-trailing-tab:before {
     background-color: @darktooth-neutral_red;
 }
-
-
-/* TODO: figure out what these affect - use obvious colors to identify more easily */
-.cm-punctuation {color: fuchsia;}
-.cm-quote {color: fuchsia;}
-.cm-negative {color: @darktooth-neutral_red;}
-.cm-positive {color: @darktooth-neutral_green;}
