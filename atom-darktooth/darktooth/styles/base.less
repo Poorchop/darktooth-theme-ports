@@ -1,0 +1,328 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+
+    .line-number {
+      &.cursor-line {
+        background-color: @syntax-selection-color;
+        color: @syntax-gutter-text-color;
+      }
+
+      &.cursor-line-no-selection {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+      }
+    }
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @syntax-text-color; // default is white
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+}
+
+// fixme
+atom-text-editor .search-results .marker .region,
+:host .search-results .marker .region {
+  background-color: transparent;
+  border: 1px solid @syntax-result-marker-color;
+}
+
+// fixme
+atom-text-editor .search-results .marker.current-result .region,
+:host .search-results .marker.current-result .region {
+  border: 1px solid @syntax-result-marker-color-selected;
+}
+
+.comment {
+  color: @darktooth-dark4;
+}
+
+.entity {
+  &.name.type {
+    color: @darktooth-aquamarine4; // consider changing
+    text-decoration: underline;
+  }
+
+// fixme
+  &.other.inherited-class {
+    color: @green; // ???
+  }
+}
+
+.keyword {
+  color: @darktooth-sienna;
+
+// what is this?
+  &.control {
+    color: @darktooth-bright_orange;
+  }
+
+  &.operator {
+    color: @syntax-text-color;
+  }
+
+// what is this?
+  &.other.special-method {
+    color: @green;
+  }
+
+// what is this?
+  &.other.unit {
+    color: @orange;
+  }
+}
+
+.storage {
+  color: @darktooth-sienna;
+}
+
+.constant {
+  color: @darktooth-burlywood4;
+
+  &.character.escape {
+    color: @darktooth-dark4; // fixme
+  }
+
+  &.numeric {
+    color: @darktooth-burlywood4;
+  }
+
+  &.other.color {
+    color: @cyan; // ???
+  }
+
+  &.other.symbol {
+    color: @green; // ???
+  }
+}
+
+.variable {
+  color: @darktooth-aquamarine4;
+
+  &.interpolation {
+    color: darken(@red, 10%); // ???
+  }
+
+  &.parameter.function {
+    color: @syntax-text-color; // fixme: "args" in `static void Main(string[] args)`
+  }
+}
+
+.invalid.illegal {
+  background-color: @darktooth-neutral_red;
+  color: @syntax-background-color; // fixme
+}
+
+.string {
+  color: @darktooth-darkslategray4;
+
+
+  &.regexp {
+    color: @cyan; // fixme
+
+    .source.ruby.embedded {
+      color: @orange; // ???
+    }
+  }
+
+  &.other.link {
+    color: @darktooth-bright_blue; // ???
+  }
+}
+
+.punctuation {
+  &.definition {
+    &.comment {
+      color: @darktooth-dark4;
+    }
+
+    &.string {
+      color: @darktooth-darkslategray4;
+    }
+
+    &.variable {
+      color: @green; // ???
+    }
+
+    &.array {
+      color: @green; // ???
+    }
+
+    &.parameters {
+      color: @syntax-text-color;
+    }
+
+    &.heading,
+    &.identity {
+      color: @blue; // ???
+    }
+
+    &.bold {
+      color: @light-orange; // ???
+      font-weight: bold;
+    }
+
+    &.italic {
+      color: @purple; // ???
+      font-style: italic;
+    }
+  }
+
+  &.section.embedded {
+    color: darken(@red, 10%); // ???
+  }
+
+}
+
+.support {
+  &.class {
+    color: @light-orange; // ???
+  }
+
+  &.function  {
+    color: @darktooth-aquamarine4;
+
+    &.any-method {
+      color: @darktooth-aquamarine4; // fixme: should probably be light0
+    }
+  }
+}
+
+.entity {
+  &.name.function {
+    color: @darktooth-aquamarine4;
+  }
+
+  &.name.class, &.name.type.class {
+    color: @darktooth-aquamarine4; // fixme: not sure what color this should be (ex. class name in C#)
+  }
+
+  &.name.section {
+    color: @blue; // ???
+  }
+
+  &.name.tag {
+    color: @red; // ???
+    text-decoration: underline;
+  }
+
+  &.other.attribute-name {
+    color: @darktooth-light4;
+
+    &.id {
+      color: @blue; // ???
+    }
+  }
+}
+
+.meta {
+  &.class {
+    color: @syntax-text-color; // check out C# for obvious example
+  }
+
+  &.link {
+    color: @orange; // ???
+  }
+
+  &.require {
+    color: @blue; // ???
+  }
+
+  &.selector {
+    color: @purple; // ???
+  }
+
+  &.separator {
+    background-color: @gray; // ???
+    color: @syntax-text-color; / ???
+  }
+}
+
+.none {
+  color: @syntax-text-color; // ???
+}
+
+// NOTHING BELOW THIS LINE HAS BEEN EDITED YET
+.markup {
+  &.bold {
+    color: @orange;
+    font-weight: bold;
+  }
+
+  &.changed {
+    color: @purple;
+  }
+
+  &.deleted {
+    color: @red;
+  }
+
+  &.italic {
+    color: @purple;
+    font-style: italic;
+  }
+
+  &.heading .punctuation.definition.heading {
+    color: @blue;
+  }
+
+  &.inserted {
+    color: @green;
+  }
+
+  &.list {
+    color: @red;
+  }
+
+  &.quote {
+    color: @orange;
+  }
+
+  &.raw.inline {
+    color: @green;
+  }
+}
+
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+  &.heading {
+    color: @green;
+  }
+}
+
+atom-text-editor[mini] .scroll-view,
+:host([mini]) .scroll-view {
+  padding-left: 1px;
+}
