@@ -1,0 +1,22 @@
+{
+    "name": "theme-darktooth",
+    "displayName": "Darktooth Theme",
+    "description": "Port of the Darktooth theme originally for Emacs",
+    "version": "0.0.1",
+    "publisher": "Poorchop",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Darktooth",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Darktooth.tmTheme"
+            }
+        ]
+    }
+}
