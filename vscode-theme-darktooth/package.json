@@ -2,8 +2,15 @@
     "name": "theme-darktooth",
     "displayName": "Darktooth Theme",
     "description": "Port of the Darktooth theme originally for Emacs",
+    "icon": "icon.png",
     "version": "0.0.1",
     "publisher": "Poorchop",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "homepage": "https://github.com/Poorchop/darktooth-theme-ports/blob/master/vscode-theme-darktooth/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Poorchop/darktooth-theme-ports.git"
+    },
     "engines": {
         "vscode": "^1.0.0"
     },
