@@ -8,3 +8,4 @@ generated using the [TmTheme Editor](https://tmtheme-editor.herokuapp.com).
 
 #### Additional links
 * [GitHub repository](https://github.com/Poorchop/darktooth-theme-ports/tree/master/vscode-theme-darktooth)
+* [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Poorchop.theme-darktooth)
