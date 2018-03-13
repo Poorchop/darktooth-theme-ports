@@ -1,0 +1,13 @@
+{
+	"tokenColors": "./Darktooth.tmTheme",
+	"colors": {
+		"editor.background": "#282828",
+		"editorCursor.foreground": "#FDF4C1",
+		"editor.foreground": "#FDF4C1",
+		"editorWhitespace.foreground": "#504945",
+		"editor.lineHighlightBackground": "#2B3C44",
+		"editor.selectionBackground": "#1B5C6B",
+		"editor.inactiveSelectionBackground": "#30434C"
+	},
+	"name": "Darktooth"
+}
